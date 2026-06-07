@@ -19,19 +19,20 @@ local StreeLib = {
             ["Color Hub 2"] = Color3.fromRGB(15,15,15),
             ["Color Stroke"] = Color3.fromRGB(0,0,0),
             ["Color Theme"] = Color3.fromRGB(57, 255, 20),
-["Color Text"] = Color3.fromRGB(220, 220, 220),
-["Color Discord Text"] = Color3.fromRGB(200, 200, 200),
-["Color Discord Stats"] = Color3.fromRGB(180, 180, 180),
-
-["Color Discord Border"] = Color3.fromRGB(120, 120, 120),
-["Color Profile Border"] = Color3.fromRGB(120, 120, 120),
-["Color Card Border"] = Color3.fromRGB(120, 120, 120),
-
-["Color Toggle Knob On"] = Color3.fromRGB(200, 200, 200),
-["Color Toggle Knob Off"] = Color3.fromRGB(150, 150, 150),
-["Color Toggle Border"] = Color3.fromRGB(120, 120, 120),
-["Border Thickness"] = 2,
-["UI Border Color"] = Color3.fromRGB(130, 130, 135),
+            ["Color Text"] = Color3.fromRGB(255, 255, 255),
+            ["Color Dark Text"] = Color3.fromRGB(170, 170, 170),
+            ["Color Discord Text"] = Color3.fromRGB(255, 255, 255),
+            ["Color Discord Stats"] = Color3.fromRGB(255, 255, 255),
+            ["Color Discord Border"] = Color3.fromRGB(255, 255, 255),
+            ["Color Profile Border"] = Color3.fromRGB(255, 255,255),
+            ["Color Card Border"] = Color3.fromRGB(255, 255, 255),
+            ["Color Toggle On"] = Color3.fromRGB(57, 255, 20),
+            ["Color Toggle Off"] = Color3.fromRGB(0, 0, 0),
+            ["Color Toggle Knob On"] = Color3.fromRGB(255, 255, 255),
+            ["Color Toggle Knob Off"] = Color3.fromRGB(255, 255, 255),
+            ["Color Toggle Border"] = Color3.fromRGB(255, 255, 255),
+            ["Border Thickness"] = 1.5,
+            ["UI Border Color"] = Color3.fromRGB(57, 255, 20),
         }
     },
     Info = {
@@ -40,7 +41,7 @@ local StreeLib = {
     Save = {
         UISize = {550, 380},
         TabSize = 160,
-        Theme = "Tumadam"
+        Theme = "StreeHub"
     },
     Settings = {},
     Connection = {},
@@ -417,7 +418,7 @@ local function ButtonFrame(Instance, Title, Description, HolderSize)
         AutomaticSize = "Y",
         Position = UDim2.new(0, 0, 0.5),
         AnchorPoint = Vector2.new(0, 0.5),
-        BackgroundTransparency = 0,
+        BackgroundTransparency = 1,
         TextTruncate = "AtEnd",
         TextSize = 10,
         TextXAlignment = "Left",
@@ -1166,14 +1167,14 @@ function StreeLib:MakeWindow(Configs)
             })
         })
         
-local Screen = InsertTheme(Create("Frame", MainFrame, {
-    BackgroundTransparency = 0.8, -- 🔥 QUAN TRỌNG
-    Active = true,
-    Size = UDim2.new(1, 0, 1, 0),
-    BackgroundColor3 = Color3.fromRGB(0,0,0),
-    Name = "Dialog",
-    ZIndex = 150
-}), "Stroke")
+        local Screen = InsertTheme(Create("Frame", MainFrame, {
+            BackgroundTransparency = 0.6,
+            Active = true,
+            Size = UDim2.new(1, 0, 1, 0),
+            BackgroundColor3 = Theme["Color Stroke"],
+            Name = "Dialog",
+            ZIndex = 150
+        }), "Stroke")
         
         MainCorner:Clone().Parent = Screen
         Frame.Parent = Screen
@@ -3046,7 +3047,7 @@ local Screen = InsertTheme(Create("Frame", MainFrame, {
         ToggleButton.Name = "ToggleButton"
         ToggleButton.Size = UDim2.new(0, 50, 0, 50)
         ToggleButton.Position = UDim2.new(0.12, 0, 0.12, 0)
-        ToggleButton.Image = "rbxassetid://131525186331057"
+        ToggleButton.Image = "rbxassetid://128100816459898"
         ToggleButton.BackgroundColor3 = Theme["Color Hub 2"]
         ToggleButton.BackgroundTransparency = 0.2
         ToggleButton.Active = true
@@ -3224,7 +3225,7 @@ local function CreateNotification(Icon, Title, Message, Duration)
     TitleLabel.TextSize = 15
     TitleLabel.TextXAlignment = Enum.TextXAlignment.Left
     TitleLabel.TextYAlignment = Enum.TextYAlignment.Top
-    TitleLabel.Text = Title or "StreeHub"
+    TitleLabel.Text = Title or "Tumadam"
     TitleLabel.ZIndex = 1003
     TitleLabel.TextStrokeTransparency = 0.3
     TitleLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
