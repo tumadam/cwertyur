@@ -18,7 +18,7 @@ local StreeLib = {
             }),
             ["Color Hub 2"] = Color3.fromRGB(15,15,15),
             ["Color Stroke"] = Color3.fromRGB(0,0,0),
-            ["Color Theme"] = Color3.fromRGB(57, 255, 20),
+            ["Color Theme"] = Color3.fromRGB(180, 180, 180),
             ["Color Text"] = Color3.fromRGB(255, 255, 255),
             ["Color Dark Text"] = Color3.fromRGB(170, 170, 170),
             ["Color Discord Text"] = Color3.fromRGB(255, 255, 255),
@@ -26,13 +26,13 @@ local StreeLib = {
             ["Color Discord Border"] = Color3.fromRGB(255, 255, 255),
             ["Color Profile Border"] = Color3.fromRGB(255, 255,255),
             ["Color Card Border"] = Color3.fromRGB(255, 255, 255),
-            ["Color Toggle On"] = Color3.fromRGB(57, 255, 20),
+            ["Color Toggle On"] = Color3.fromRGB(180, 180, 180),
             ["Color Toggle Off"] = Color3.fromRGB(0, 0, 0),
             ["Color Toggle Knob On"] = Color3.fromRGB(255, 255, 255),
             ["Color Toggle Knob Off"] = Color3.fromRGB(255, 255, 255),
             ["Color Toggle Border"] = Color3.fromRGB(255, 255, 255),
             ["Border Thickness"] = 1.5,
-            ["UI Border Color"] = Color3.fromRGB(57, 255, 20),
+            ["UI Border Color"] = Color3.fromRGB(180, 180, 180),
         }
     },
     Info = {
@@ -685,6 +685,7 @@ function StreeLib:MakeWindow(Configs)
         Size = UDim2.fromOffset(UISizeX, UISizeY),
         Position = UDim2.new(0.5, -UISizeX/2, 0.5, -UISizeY/2),
         BackgroundTransparency = bgTransparency,
+        BackgroundColor3 = Theme["Color Hub 2"],
         Name = "Hub"
     }), "Main")
     Make("Gradient", MainFrame, {
@@ -759,7 +760,7 @@ function StreeLib:MakeWindow(Configs)
         Position = UDim2.new(0, 0, 0.5),
         AnchorPoint = Vector2.new(0, 0.5),
         BackgroundTransparency = 1,
-        Image = "rbxassetid://99948086845842",
+        Image = "rbxassetid://131525186331057",
         ImageColor3 = Theme["Color Text"],
         Name = "MinimizedIcon"
     })
@@ -3047,7 +3048,7 @@ function StreeLib:MakeWindow(Configs)
         ToggleButton.Name = "ToggleButton"
         ToggleButton.Size = UDim2.new(0, 50, 0, 50)
         ToggleButton.Position = UDim2.new(0.12, 0, 0.12, 0)
-        ToggleButton.Image = "rbxassetid://80733289818327"
+        ToggleButton.Image = "rbxassetid://131525186331057"
         ToggleButton.BackgroundColor3 = Theme["Color Hub 2"]
         ToggleButton.BackgroundTransparency = 0.2
         ToggleButton.Active = true
@@ -3066,7 +3067,7 @@ function StreeLib:MakeWindow(Configs)
         Flag.Name = "INAFlagIcon"
         Flag.Parent = ToggleButton
         Flag.BackgroundTransparency = 1
-        Flag.Image = "rbxassetid://85958040776078"
+        Flag.Image = "rbxassetid://115535579177394"
         Flag.Size = UDim2.fromOffset(28, 18)
         Flag.AnchorPoint = Vector2.new(0.5, 0.5)
         Flag.Position = UDim2.new(1, -2, 0, 2)
