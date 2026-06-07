@@ -19,7 +19,7 @@ local StreeLib = {
             ["Color Hub 2"] = Color3.fromRGB(15,15,15),
             ["Color Stroke"] = Color3.fromRGB(0,0,0),
             ["Color Theme"] = Color3.fromRGB(200, 200, 200),
-            ["Color Text"] = Color3.fromRGB(57, 255, 20),
+            ["Color Text"] = Color3.fromRGB(255, 255, 255),
             ["Color Dark Text"] = Color3.fromRGB(170, 170, 170),
             ["Color Discord Text"] = Color3.fromRGB(255, 255, 255),
             ["Color Discord Stats"] = Color3.fromRGB(255, 255, 255),
@@ -3047,7 +3047,7 @@ function StreeLib:MakeWindow(Configs)
         ToggleButton.Name = "ToggleButton"
         ToggleButton.Size = UDim2.new(0, 50, 0, 50)
         ToggleButton.Position = UDim2.new(0.12, 0, 0.12, 0)
-        ToggleButton.Image = "rbxassetid://128806139932217"
+        ToggleButton.Image = "rbxassetid://131525186331057"
         ToggleButton.BackgroundColor3 = Theme["Color Hub 2"]
         ToggleButton.BackgroundTransparency = 0.2
         ToggleButton.Active = true
