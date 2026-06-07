@@ -3067,7 +3067,7 @@ function StreeLib:MakeWindow(Configs)
         Flag.Name = "INAFlagIcon"
         Flag.Parent = ToggleButton
         Flag.BackgroundTransparency = 1
-        Flag.Image = "rbxassetid://115535579177394"
+        Flag.Image = "rbxassetid://80531161135856"
         Flag.Size = UDim2.fromOffset(28, 18)
         Flag.AnchorPoint = Vector2.new(0.5, 0.5)
         Flag.Position = UDim2.new(1, -2, 0, 2)
@@ -3330,7 +3330,7 @@ end
 function StreeLib:Notify(Configs)
     local Title = Configs.Title or Configs[1] or "StreeHub"
     local Message = Configs.Message or Configs[2] or Configs.Text or ""
-    local Icon = Configs.Icon or "rbxassetid://99948086845842"
+    local Icon = Configs.Icon or "rbxassetid://131525186331057"
     local Duration = Configs.Duration or Configs.Time or 5
     
     table.insert(NotificationQueue, {
