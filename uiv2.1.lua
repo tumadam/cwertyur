@@ -18,8 +18,8 @@ local StreeLib = {
             }),
             ["Color Hub 2"] = Color3.fromRGB(15,15,15),
             ["Color Stroke"] = Color3.fromRGB(0,0,0),
-            ["Color Theme"] = Color3.fromRGB(57, 255, 20),
-            ["Color Text"] = Color3.fromRGB(255, 255, 255),
+            ["Color Theme"] = Color3.fromRGB(200, 200, 200),
+            ["Color Text"] = Color3.fromRGB(57, 255, 20),
             ["Color Dark Text"] = Color3.fromRGB(170, 170, 170),
             ["Color Discord Text"] = Color3.fromRGB(255, 255, 255),
             ["Color Discord Stats"] = Color3.fromRGB(255, 255, 255),
@@ -32,7 +32,7 @@ local StreeLib = {
             ["Color Toggle Knob Off"] = Color3.fromRGB(255, 255, 255),
             ["Color Toggle Border"] = Color3.fromRGB(255, 255, 255),
             ["Border Thickness"] = 1.5,
-            ["UI Border Color"] = Color3.fromRGB(119, 121, 124),
+            ["UI Border Color"] = Color3.fromRGB(200, 200, 200),
         }
     },
     Info = {
