@@ -19,20 +19,19 @@ local StreeLib = {
             ["Color Hub 2"] = Color3.fromRGB(15,15,15),
             ["Color Stroke"] = Color3.fromRGB(0,0,0),
             ["Color Theme"] = Color3.fromRGB(57, 255, 20),
-            ["Color Text"] = Color3.fromRGB(255, 255, 255),
-            ["Color Dark Text"] = Color3.fromRGB(170, 170, 170),
-            ["Color Discord Text"] = Color3.fromRGB(255, 255, 255),
-            ["Color Discord Stats"] = Color3.fromRGB(255, 255, 255),
-            ["Color Discord Border"] = Color3.fromRGB(255, 255, 255),
-            ["Color Profile Border"] = Color3.fromRGB(255, 255,255),
-            ["Color Card Border"] = Color3.fromRGB(255, 255, 255),
-            ["Color Toggle On"] = Color3.fromRGB(57, 255, 20),
-            ["Color Toggle Off"] = Color3.fromRGB(0, 0, 0),
-            ["Color Toggle Knob On"] = Color3.fromRGB(255, 255, 255),
-            ["Color Toggle Knob Off"] = Color3.fromRGB(255, 255, 255),
-            ["Color Toggle Border"] = Color3.fromRGB(255, 255, 255),
-            ["Border Thickness"] = 1.5,
-            ["UI Border Color"] = Color3.fromRGB(180, 180, 180),
+["Color Text"] = Color3.fromRGB(220, 220, 220),
+["Color Discord Text"] = Color3.fromRGB(200, 200, 200),
+["Color Discord Stats"] = Color3.fromRGB(180, 180, 180),
+
+["Color Discord Border"] = Color3.fromRGB(120, 120, 120),
+["Color Profile Border"] = Color3.fromRGB(120, 120, 120),
+["Color Card Border"] = Color3.fromRGB(120, 120, 120),
+
+["Color Toggle Knob On"] = Color3.fromRGB(200, 200, 200),
+["Color Toggle Knob Off"] = Color3.fromRGB(150, 150, 150),
+["Color Toggle Border"] = Color3.fromRGB(120, 120, 120),
+["Border Thickness"] = 2,
+["UI Border Color"] = Color3.fromRGB(130, 130, 135),
         }
     },
     Info = {
@@ -418,7 +417,7 @@ local function ButtonFrame(Instance, Title, Description, HolderSize)
         AutomaticSize = "Y",
         Position = UDim2.new(0, 0, 0.5),
         AnchorPoint = Vector2.new(0, 0.5),
-        BackgroundTransparency = 1,
+        BackgroundTransparency = 0,
         TextTruncate = "AtEnd",
         TextSize = 10,
         TextXAlignment = "Left",
@@ -1167,14 +1166,14 @@ function StreeLib:MakeWindow(Configs)
             })
         })
         
-        local Screen = InsertTheme(Create("Frame", MainFrame, {
-            BackgroundTransparency = 0.6,
-            Active = true,
-            Size = UDim2.new(1, 0, 1, 0),
-            BackgroundColor3 = Theme["Color Stroke"],
-            Name = "Dialog",
-            ZIndex = 150
-        }), "Stroke")
+local Screen = InsertTheme(Create("Frame", MainFrame, {
+    BackgroundTransparency = 0.8, -- 🔥 QUAN TRỌNG
+    Active = true,
+    Size = UDim2.new(1, 0, 1, 0),
+    BackgroundColor3 = Color3.fromRGB(0,0,0),
+    Name = "Dialog",
+    ZIndex = 150
+}), "Stroke")
         
         MainCorner:Clone().Parent = Screen
         Frame.Parent = Screen
