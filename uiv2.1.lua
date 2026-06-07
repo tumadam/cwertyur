@@ -3047,7 +3047,7 @@ function StreeLib:MakeWindow(Configs)
         ToggleButton.Name = "ToggleButton"
         ToggleButton.Size = UDim2.new(0, 50, 0, 50)
         ToggleButton.Position = UDim2.new(0.12, 0, 0.12, 0)
-        ToggleButton.Image = "rbxassetid://128100816459898"
+        ToggleButton.Image = "rbxassetid://80733289818327"
         ToggleButton.BackgroundColor3 = Theme["Color Hub 2"]
         ToggleButton.BackgroundTransparency = 0.2
         ToggleButton.Active = true
