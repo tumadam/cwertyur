@@ -18,7 +18,7 @@ local StreeLib = {
             }),
             ["Color Hub 2"] = Color3.fromRGB(15,15,15),
             ["Color Stroke"] = Color3.fromRGB(0,0,0),
-            ["Color Theme"] = Color3.fromRGB(180, 180, 180),
+            ["Color Theme"] = Color3.fromRGB(57, 255, 20),
             ["Color Text"] = Color3.fromRGB(255, 255, 255),
             ["Color Dark Text"] = Color3.fromRGB(170, 170, 170),
             ["Color Discord Text"] = Color3.fromRGB(255, 255, 255),
@@ -3585,8 +3585,8 @@ end
 task.spawn(function()
     task.wait(2)
     StreeLib:Notify({
-        Title = "StreeLib",
-        Message = "UI StreeLib Download Completed",
+        Title = "Tumadam",
+        Message = "UI Tumadam Download Completed",
         Duration = 10
     })
 end)
